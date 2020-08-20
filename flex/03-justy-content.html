@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      
+      width: 500px;
+      height: 400px;
+      background-color: orange;
+      display: flex;
+      flex-direction: row;
+      /* 
+      justify-content 决定flex items在主轴的对齐方式
+      flex-start 默认
+      flex-end 与main end对齐
+      center 居中
+      space-between flex items之间的距离相等 与main start main end两端对齐
+      space-evenly flex items之间的距离相等 与main start main end之间的距离等于flex items 之间的距离
+      space-around flex items之间的距离相等 与main start main end之间的距离是flex items 之间的距离的一半
+       */
+      justify-content: space-around;
+    }
+    .box .item {
+      width: 100px;
+      height: 100px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 100px;
+    }
+    .box .item1 {
+      background-color: #ff0000;
+    }
+    .box .item2 {
+      background-color: #00ff00;
+    }
+    .box .item3 {
+      background-color: #0000ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item item1">item1</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+  </div>
+</body>
+
+</html>
