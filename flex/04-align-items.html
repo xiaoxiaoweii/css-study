@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      
+      width: 500px;
+      height: 400px;
+      background-color: orange;
+      display: flex;
+      /* 
+      align-items 决定flex items 在交叉轴上的对齐方式
+      normal || stretch 在cross axis方向的size为auto时 会自动拉伸至填充 flex container
+      flex-start cross axis cross-start对齐
+      flex-end cross axis cross-end 对齐
+      center 中心点对齐 
+      baseline 基线对齐 都是第一行基线
+      */
+      align-items: baseline;
+    }
+    .box .item {
+      width: 100px;
+      /* height: 100px; */
+      color: #ffffff;
+      text-align: center;
+      line-height: 100px;
+    }
+    .box .item1 {
+      background-color: #ff0000;
+      height: 80px;
+      font-size: 30px;
+    }
+    .box .item2 {
+      background-color: #00ff00;
+      height: 150px;
+    }
+    .box .item3 {
+      background-color: #0000ff;
+      height: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item item1">item1</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+  </div>
+</body>
+
+</html>
