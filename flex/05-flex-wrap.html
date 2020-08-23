@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      
+      width: 550px;
+      height: 400px;
+      background-color: orange;
+      display: flex;
+      
+      /* 默认情况下 所有flex items 都会在同一行显示 放不下 items宽度会收缩 */
+      /*  flex-wrap：nowrap 默认  */
+      /* nowrap 不换行 */
+      /* wrap 换行 */
+      /* wrap-reverse 换行加反转 */
+      flex-wrap: wrap;
+
+    }
+    .box .item {
+      width: 100px;
+      height: 100px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .box .item1 {
+      background-color: #ff0000;
+    }
+    .box .item2 {
+      background-color: #00ff00;
+    }
+    .box .item3 {
+      background-color: #0000ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item item1">item1</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+    <div class="item item1">item4</div>
+    <div class="item item2">item5</div>
+    <div class="item item3">item6</div>
+    <div class="item item1">item7</div>
+    <div class="item item2">item8</div>
+    <div class="item item3">item9</div>
+  </div>
+</body>
+
+</html>
